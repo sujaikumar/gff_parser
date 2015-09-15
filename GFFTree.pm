@@ -1312,7 +1312,7 @@ sub as_string {
 				}
 				else {
 					my $value = $attr;
-					$value =~ s/\._\d+$//;
+					#$value =~ s/\._\d+$//;
 					$value =~ s/=/\%3D/g;
   					$value =~ s/;/\%3B/g;
 					$col_nine[$s] .= $key.'='.$value.';';
@@ -1332,7 +1332,7 @@ sub as_string {
 			}
 			else {
 				my $value = $self->{attributes}->{$key};
-				$value =~ s/\._\d+$//;
+				#$value =~ s/\._\d+$//;
 				$value =~ s/=/\%3D/g;
   				$value =~ s/;/\%3B/g;
 				$col_nine[0] .= $key.'='.$value.';';
